@@ -2,34 +2,21 @@ const testimonials = document.querySelectorAll('.testimonial')
 let index = 0
 testimonials[index].classList.remove('hidden')
 
-const profile = document.querySelector('.profile')
 const quote = document.getElementById('quote')
 const target = document.querySelector('.contact-us-page')
 
 const navLeft = document.querySelector('.nav-left')
 const navRight = document.querySelector('.nav-right')
 const bullets = document.querySelectorAll('.bullet')
-const tag = document.querySelector('.tag')
 
 const profileName = document.querySelector('.profile p')
 
 
 
 
-tag.addEventListener('click',(e)=>{
-    e.preventDefault()
-    window.location.href="index.html"
-})
 
-profile.addEventListener('click',(e)=>{
-    e.preventDefault()
-    if(profileName.innerText==='Login'){
-        window.location.href="login.html"
-    }
-    else{
-        window.location.href="profile.html"
-    }
-})
+
+
 
 quote.addEventListener('click',(e)=>{
     e.preventDefault()

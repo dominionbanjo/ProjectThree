@@ -5,27 +5,8 @@ const passwordInput = document.getElementById('password')
 const confirmPasswordInput = document.getElementById('confirm-password')
 const button = document.getElementById('btn')
 const msg = document.querySelector('.message')
-const profile = document.querySelector('.profile')
-const tag = document.querySelector('.tag')
 const url ='http://localhost:8080'
 const profileName = document.querySelector('.profile p')
-
-
-
-
-tag.addEventListener('click',(e)=>{
-    e.preventDefault()
-    window.location.href="index.html"
-})
-
-profile.addEventListener('click',(e)=>{
-    e.preventDefault()
-    window.location.href="login.html"
-})
-
-
-
-
 
 
 
