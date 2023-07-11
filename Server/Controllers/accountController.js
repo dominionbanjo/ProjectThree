@@ -20,6 +20,17 @@ exports.signUp = async (req, res) => {
     }
 }
 
+exports.deleteAccount =async (req,res)=>{
+    try{
+        const user_id = req.user_id
+        const message = await(Accounts.deleteAccount(user_id))
+        res.status(200).json({message})
+    }
+    catch (error) {
+        res.status(400).json({ error: error.message })
+    }   
+}
+
 exports.login = async (req, res) => {
     const { email, password } = req.body
 

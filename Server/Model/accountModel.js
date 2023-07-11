@@ -19,7 +19,7 @@ class Accounts {
         if (!validator.isEmail(email)) throw Error("Invalid Email Address")
 
         // { minLength: 8, minLowercase: 1, minUppercase: 1, minNumbers: 1, minSymbols: 1, returnScore: false, pointsPerUnique: 1, pointsPerRepeat: 0.5, pointsForContainingLower: 10, pointsForContainingUpper: 10, pointsForContainingNumber: 10, pointsForContainingSymbol: 10 }
-        if (!validator.isStrongPassword(password)) throw Error("Password not strong enough")
+        // if (!validator.isStrongPassword(password)) throw Error("Password not strong enough")
 
         const isExist = await this.userExist(email)
 
@@ -38,6 +38,18 @@ class Accounts {
 
 
     }
+
+
+    static async deleteAccount(id) {
+
+        let sql = `DELETE FROM accounts WHERE id = '${id}'` 
+        const msg = await db.execute(sql)
+        return msg
+    }
+
+
+
+
 
     static async login(email, password) {
 

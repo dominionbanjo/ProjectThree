@@ -6,6 +6,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const WebSocket = require('ws')
 const accountsRoutes = require('./Routes/accountRoutes.js')
+const userRoutes = require('./Routes/userRoutes.js')
 
 const PORT = process.env.PORT
 const app = express()
@@ -25,6 +26,7 @@ app.use(
 
 
 app.use('/accounts', accountsRoutes)
+app.use('/user', userRoutes)
 
 
 

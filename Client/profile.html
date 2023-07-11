@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/profile.css">
+    <link rel="shortcut icon" href="./Images/sponge.webp" type="image/x-icon">
+
+    <title>Profile</title>
+</head>
+<body>
+
+
+    <header>
+        <div class="tag">
+            <img src="./Images/sponge.webp" alt="">
+            <h2>CLEAN BEES</h2>
+        </div>
+        
+
+        <nav>
+                <div class="profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-481q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160-160v-94q0-38 19-65t49-41q67-30 128.5-45T480-420q62 0 123 15.5t127.921 44.694q31.301 14.126 50.19 40.966Q800-292 800-254v94H160Zm60-60h520v-34q0-16-9.5-30.5T707-306q-64-31-117-42.5T480-360q-57 0-111 11.5T252-306q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570-631q0-39-25.5-64.5T480-721q-39 0-64.5 25.5T390-631q0 39 25.5 64.5T480-541Zm0-90Zm0 411Z"/></svg> -->
+                    <p>Log In</p>
+                </div>
+           
+
+            <!-- <span id="drop_down" class="material-symbols-outlined">
+                arrow_drop_down
+            </span> -->
+
+
+
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing Plans</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="book-now" href="#">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="main">
+        <button class="edit-profile-button">Edit Profile</button>
+        <h1 class="fullname"></h1>
+        
+        
+        <p>Email: <span class="usermail"></span></p>
+
+
+        <button class="logout">Log Out</button>
+
+        <div class="edit-form">
+            
+        </div>
+
+
+    </div>
+
+
+    <div class="edit-profile hide-profile">
+        <h1>Hello</h1>
+        <form>
+            <h3>Edit Profile</h3>
+    
+            <label for="firstname">Firstname</label>
+            <input type="text" placeholder="Lastname" id="firstname">
+    
+            <label for="lastname">Lastname</label>
+            <input type="text" placeholder="Firstname" id="lastname">
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" id="email">
+    
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password">
+    
+            <label for="confirm-password">Confirm-Password</label>
+            <input type="password" placeholder="Confirm Password" id="confirm-password">
+            <p class="message"></p>
+            <button class="edit-confirm-button" id="btn">Confirm</button>
+            
+        </form>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-left">
+            <h1>OUR COMPANY</h1>
+            <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+        </div>
+
+        <div class="footer-right">
+            <div class="rleft">
+                <h2>Head Office</h2>
+                <br>
+                <br>
+                <p class="rp">500 Terry Francine Street San Francisco, CA 94158</p>
+                <br>
+                <hr class="footer-hr">
+                <br>
+                <p>123-456-7890</p>
+                <p>info@mysite.com</p>
+            </div>
+            <div class="rright">
+                <div class="texts">
+                    <h2>Operating Hours</h2>
+                    <br>
+                    <!-- <br> -->
+                    <p>Mon - Fri: 8am - 8pm</p>
+                    <p>Saturday: 9am - 7pm</p>
+                    <p>Sunday: 9am - 8pm</p>
+                </div>
+                
+                <div class="logos">
+                    <img src="./Images/fb-logp.webp" alt="">
+                    <img src="./Images/strange-logo.webp" alt="">
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Javascript/header.js"></script>
+    <script type="module" src="./Javascript/profile.js"></script>
+
+</body>
+</html>

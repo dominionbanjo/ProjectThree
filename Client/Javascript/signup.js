@@ -8,7 +8,7 @@ const msg = document.querySelector('.message')
 const profile = document.querySelector('.profile')
 const tag = document.querySelector('.tag')
 const url ='http://localhost:8080'
-
+const profileName = document.querySelector('.profile p')
 
 
 

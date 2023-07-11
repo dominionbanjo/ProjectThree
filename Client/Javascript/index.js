@@ -11,6 +11,11 @@ const navRight = document.querySelector('.nav-right')
 const bullets = document.querySelectorAll('.bullet')
 const tag = document.querySelector('.tag')
 
+const profileName = document.querySelector('.profile p')
+
+
+
+
 tag.addEventListener('click',(e)=>{
     e.preventDefault()
     window.location.href="index.html"
@@ -18,7 +23,12 @@ tag.addEventListener('click',(e)=>{
 
 profile.addEventListener('click',(e)=>{
     e.preventDefault()
-    window.location.href="login.html"
+    if(profileName.innerText==='Login'){
+        window.location.href="login.html"
+    }
+    else{
+        window.location.href="profile.html"
+    }
 })
 
 quote.addEventListener('click',(e)=>{

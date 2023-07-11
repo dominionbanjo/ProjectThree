@@ -34,19 +34,27 @@ header{
 
 header nav{
     /* background-color: black; */
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
    
     
 }
-
-header nav .profile{
+.profile_dropdown{
     /* background-color: black; */
-    width: 15%;
+    width: 18%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.profile{
+    /* background-color: black; */
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: transform ease-out 0.5s;
     /* justify-content: space-between; */
 
@@ -55,8 +63,13 @@ header nav .profile{
     transform: scale(1.1);
     cursor: pointer;
 }
-header nav .profile svg{
-    width: 13%;
+
+
+.profile svg{
+    /* display: none; */
+    /* width: 13%;
+    height: 10%; */
+    width: 6%;
     height: 10%;
     margin-right: 15px;
     border: 1px solid white;
