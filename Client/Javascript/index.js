@@ -38,7 +38,7 @@ const showTestimonial = () =>{
 }
 
 
-setInterval(showTestimonial,5000)
+setInterval(showTestimonial,2000)
 
 
 let currentIndex = 0

@@ -5,7 +5,23 @@ const displayName = userName ? userName : 'Login'
 const header = document.querySelector('header')
 const profile = document.querySelector('.profile')
 const profileP = document.querySelector('.profile p')
+const targetTo = document.querySelector('.contact-us-page')
+const contact = document.querySelector('.contact-header')
+const navbarLinks = document.querySelectorAll('nav a');
 
+console.log(navbarLinks.length)
+
+let currentLocation = window.location.href;
+
+for (var i = 0; i < navbarLinks.length; i++) {
+    console.log(navbarLinks[i].href)
+
+    if (navbarLinks[i].href === currentLocation) {
+      navbarLinks[i].classList.add('active-anchor');
+      break;
+    }
+  }
+  console.log(navbarLinks)
 
 // header_btn.innerHTML = `<p>${user}</p>`
 profileP.innerText = `${displayName}`

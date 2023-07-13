@@ -17,17 +17,21 @@ button.addEventListener('click',(e)=>{
         }
 
         loginUser(user)
-        alert('Login Sucessful')
 
-        nameInput.value = ''
-        passwordInput.value = ''
+        if(!result.error){
+            nameInput.value = ''
+            passwordInput.value = ''
+            // alert('Login Sucessful')
+        }
+       
     }
+
     else{
         // alert('Please Insert all fields')
         msg.innerText = 'All fields must be filled!!!'
     }
 
-
+    alert('Login Sucessful')
     console.log(user)
 })
 

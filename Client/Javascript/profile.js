@@ -6,6 +6,7 @@ const logout = document.querySelector('.logout')
 const tag = document.querySelector('.tag')
 const editConfirmButton = document.querySelector('.edit-confirm-button')
 const editProfileButton = document.querySelector('.edit-profile-button')
+const editCancel = document.querySelector('.edit-profile svg')
 const editProfileContainer = document.querySelector('.edit-profile')
 const msg = document.querySelector('.message')
 const firstNameInput = document.getElementById('firstname')
@@ -67,6 +68,11 @@ tag.addEventListener('click',(e)=>{
 editProfileButton.addEventListener('click',(e)=>{
     e.preventDefault()
     editProfileContainer.classList.remove('hide-profile')
+})
+
+editCancel.addEventListener('click',()=>{
+    editProfileContainer.classList.add('hide-profile')
+
 })
 
 

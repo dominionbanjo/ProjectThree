@@ -30,12 +30,8 @@ button.addEventListener('click',(e)=>{
             password:passwordInput.value
         }
 
-        alert('Signup Sucessful')
-
-        firstNameInput.value = ''
-        lastNameInput.value = ''
-        passwordInput.value = ''
-        confirmPasswordInput.value = ''
+        
+       
     }
     else{
         // alert('Please Insert all fields')
@@ -43,6 +39,14 @@ button.addEventListener('click',(e)=>{
     }
     console.log(user)
     createAccount(user)
+    if(!result.error){
+        alert('Signup Sucessful')
+
+        firstNameInput.value = ''
+        lastNameInput.value = ''
+        passwordInput.value = ''
+        confirmPasswordInput.value = ''
+    }
 })
 
 

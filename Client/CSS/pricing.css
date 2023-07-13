@@ -92,11 +92,23 @@ header nav ul{
 header nav ul a{
     color: white;
     text-decoration: none;
+    transition: 0.5s ease;
+
+}
+
+header nav ul a:hover{
+    color: #deff4f;
+}
+
+.book-now:hover{
+    color: white;
 }
 
 .book-now{
     font-size: 25px;
     color: #deff4f;
+    transition: 0.5s ease;
+
 }
 
 
@@ -260,7 +272,10 @@ li svg{
 
 
 
-
+.active-anchor{
+    color: #deff4f;
+    font-weight: 600;
+}
 
 
 

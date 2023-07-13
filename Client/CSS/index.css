@@ -15,6 +15,10 @@ header{
     height: 75px;
     position: fixed;
 }
+.contact-header{
+    /* transition: 0.5s ease; */
+
+}
 
 .tag{
     width: 20%;
@@ -91,11 +95,21 @@ header nav ul{
 header nav ul a{
     color: white;
     text-decoration: none;
+    transition: 0.5s ease;
 }
 
+header nav ul a:hover{
+    color: #deff4f;
+}
+
+.book-now:hover{
+    color: white;
+}
 .book-now{
     font-size: 25px;
     color: #deff4f;
+    transition: 0.5s ease;
+
 }
 
 .hands-page{
@@ -115,6 +129,7 @@ header nav ul a{
 }
 
 .hands-page h1{
+    width: 70%;
     margin: 60px;
     font-size: 80px;
     font-weight: 700;
@@ -179,6 +194,9 @@ header nav ul a{
 .reason{
     display: flex;
     align-items: center;
+}
+.active-anchor{
+    color: #deff4f;
 }
 
 .reason p{
@@ -439,4 +457,8 @@ footer p{
     align-items: center;
     justify-content: space-between;
     padding-top: 40px;
+}
+
+.menu{
+    display: none;
 }

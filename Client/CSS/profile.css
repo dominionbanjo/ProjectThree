@@ -92,11 +92,28 @@ header nav ul{
 header nav ul a{
     color: white;
     text-decoration: none;
+    transition: 0.5s ease;
+
 }
 
+header nav ul a:hover{
+    color: #deff4f;
+}
+
+.book-now:hover{
+    color: white;
+}
+
+nav ul a{
+    /* background-color: #080710; */
+}
 .book-now{
     font-size: 25px;
     color: #deff4f;
+    transition: 0.5s ease;
+    text-decoration: none;
+    width: 10%;
+    /* background-color: #080710; */
 }
 
 .main{
@@ -107,6 +124,7 @@ header nav ul a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #ffffff;
     /* margin-bottom: 20px; */
 }
 
@@ -119,11 +137,21 @@ header nav ul a{
     background-color: #051625a2;
 
 }
-
+.edit-profile h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.edit-profile svg{
+    fill: white;
+    width: 30px;
+}
+.edit-profile svg:hover{
+    cursor: pointer;
+}
 .edit-profile.hide-profile{
     display: none;
 }
-
 
 form{
     /* height: 600px; */
@@ -242,7 +270,9 @@ button{
 
 
 
-
+.active-anchor{
+    color: #deff4f;
+}
 
 
 
