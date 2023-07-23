@@ -827,7 +827,9 @@ footer p{
     font-size: 16px;
     /* width: 10%; */
     background-color: #deff4f;
-    padding: 20px 65px;
+    padding: 20px 35px;
+    width: 50%;
+    text-align: center;
 }
 
 .hands-page h1{
@@ -843,7 +845,8 @@ footer p{
     color: white;
     font-size: 20px;
     font-weight: 200;
-
+    text-align: center;
+    width: 90%;
 }
 
 
